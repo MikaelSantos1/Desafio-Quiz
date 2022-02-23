@@ -5,7 +5,6 @@ export function UserInput(){
     const [user,setUser]=useState('')
 
     const handleUserSubmit=(event)=>{
-        
         event.preventDefault()
         setUser(input)
     }

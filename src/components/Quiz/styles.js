@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
 export const Container= styled.div`
+margin:0 auto;
 display:flex;
 justify-content:center;
 align-items:center;
-width:300px;
-height:300px;
-background-color:#769AAD;
+width:80vw;
+height:50vh;
+background-color:#fff;
 border-radius:2rem;
-color:#fff;
+
 flex-direction:column;
 div{
     width:100%;
@@ -20,5 +21,28 @@ div{
 label{
     width:50%;
 }
-
+ul{
+    
+    width:100%;
+}
+li{
+    
+    height:2rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+   color:#fff;
+    margin:0 auto;
+    margin-top:1rem;
+    background-color:#b96edf;
+    width:95%;
+    cursor:pointer;
+    transition: background-color 0.2s;
+    border:1px solid black;
+    &:hover{
+        background-color:#DA70D6;
+        
+    }
+}
 `
