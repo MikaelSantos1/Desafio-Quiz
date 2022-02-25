@@ -36,27 +36,7 @@ export function Quiz() {
     
 
     function checkIfAnswerIsCorrect(id) {
-        // if (answers[counter]?.answer_a === id)  {
-           
-        //     setCounter(counter+1)
-        // }
-        // if (answers[counter]?.answer_b === id) 
-        // {
-            
-        //     setCounter(counter+1)
-        // }
-        // if (answers[counter]?.answer_c === id) 
-        // {
-            
-        //     setCounter(counter+1)
-        // }
-        // if (answers[counter]?.answer_d === id) 
-        // {
-            
-        //     setCounter(counter+1)
-        // }
         setCounter(counter+1)
-
         const correctAnswer = questions[counter]?.correct_answers
       
         if (correctAnswer.answer_a_correct === 'true' && answers[counter]?.answer_a === id)
@@ -80,8 +60,8 @@ export function Quiz() {
     }
 
     
-    // console.log(questions[counter])
-     console.log(endGame)
+    
+    
     return (
         <Container>
  
@@ -140,7 +120,7 @@ export function Quiz() {
                     {
                         !gameStart && endGame===true?
                         <>
-                        <Result results={points} setEndgame={setEndgame}/>
+                        <Result results={points} setEndgame={setEndgame} setPoints={setPoints}/>
                         </>:''
                         
                     }

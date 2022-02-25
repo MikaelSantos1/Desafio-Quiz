@@ -7,7 +7,7 @@ export function Result({results,setEndgame}){
           <h3>Voce acertou {results} questões do Quiz.
           <br />Parabens!</h3>
 
-          <button onClick={()=>{setEndgame(false)}}>Reiniciar Quiz</button>
+          <button onClick={()=>{setEndgame(false),setPoints(0)}}>Reiniciar Quiz</button>
        </Container>
    )
 
