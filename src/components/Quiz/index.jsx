@@ -39,20 +39,20 @@ export function Quiz() {
         setCounter(counter+1)
         const correctAnswer = questions[counter]?.correct_answers
       
-        if (correctAnswer.answer_a_correct === 'true' && answers[counter]?.answer_a === id)
+        if (correctAnswer.answer_a_correct === 'true' && answers[counter].answer_a === id)
         {      
             setPoints(points + 1)
            
         } 
-        if (correctAnswer.answer_b_correct === 'true' && answers[counter]?.answer_b === id) {      
+        if (correctAnswer.answer_b_correct === 'true' && answers[counter].answer_b === id) {      
             setPoints(points + 1)
            
         }
-        if (correctAnswer.answer_c_correct === 'true' && answers[counter]?.answer_c === id) { 
+        if (correctAnswer.answer_c_correct === 'true' && answers[counter].answer_c === id) { 
             setPoints(points + 1)
            
         }
-        if (correctAnswer.answer_d_correct === 'true' && answers[counter]?.answer_d === id) {
+        if (correctAnswer.answer_d_correct === 'true' && answers[counter].answer_d === id) {
             setPoints(points + 1)
            
         }
