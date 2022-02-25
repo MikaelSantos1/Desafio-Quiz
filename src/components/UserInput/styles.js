@@ -17,7 +17,7 @@ margin:0 auto;
 display:flex;
 justify-content:center;
 align-items:center;
-width:30vw;
+width:50vw;
 margin-top:2rem;
 flex-direction:column;
 
